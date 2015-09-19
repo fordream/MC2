@@ -27,3 +27,9 @@ double GetSumOfAnProduct(float a, float q, int n)
     }
     
 }
+
+// Format num str as '25,458,123'
+string FormatNum(double num)
+{
+    
+}
