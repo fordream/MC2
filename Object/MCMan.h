@@ -2,8 +2,8 @@
 //  MCMan.h
 //  MC2
 //
-//  Created by 曹国运 on 15/9/19.
-//  Copyright (c) 2015年 曹国运. All rights reserved.
+//  Created by Yun on 15/9/19.
+//  Copyright (c) 2015 Yun All rights reserved.
 //
 
 #ifndef __MC2__MCMan__
@@ -24,14 +24,14 @@ class MCMan
 public:
     
 private:
-    string  sName;              // 名字
-    Sex     sSex;               // 性别
-    int     iOld;               // 年龄
+    string  sName;              // name
+    Sex     sSex;               // sex
+    int     iOld;               // old
     
-    float   fCurWage;           // 当前工资
+    float   fCurWage;           // current wage
     
-    int     iLitleCircle = 5;   // 小计算周期
-    int     iBigCircle = 10;    // 大计算周期
+    int     iLitleCircle = 5;   // little calculate circle
+    int     iBigCircle = 10;    // big calculate circle
 };
 
 #endif /* defined(__MC2__MCMan__) */

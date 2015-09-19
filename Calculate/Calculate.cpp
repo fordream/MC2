@@ -2,8 +2,8 @@
 //  Calculate.cpp
 //  MC2
 //
-//  Created by 曹国运 on 15/9/18.
-//  Copyright (c) 2015年 曹国运. All rights reserved.
+//  Created by Yun on 15/9/18.
+//  Copyright (c) 2015 Yun All rights reserved.
 //
 
 #include "Calculate.h"
@@ -14,15 +14,15 @@ using namespace std;
 double Calculate::GetTimeDipositNYearsLater(float fMonthCapital, float fYearRate, int n)
 {
     cout<<endl;
-    cout<<"月定存  -> "<<fMonthCapital<<" 元"<<endl;
-    cout<<"年利率  -> "<<fYearRate<<endl;
-    cout<<"年数    -> "<<n<<" 年"<<endl;
+    cout<<"Month time deposit -> "<<fMonthCapital<<" Yuan ."<<endl;
+    cout<<"Year Rate -> "<<fYearRate<<endl;
+    cout<<"Num of year    -> "<<n<<" years after ."<<endl;
     
     double fYearCapital = GetMonthTimeDipositOneYear(fMonthCapital, fYearRate);
     double fNYearCapital = GetYearTimeDipositNYear(fYearCapital, fYearRate, n);
     cout<<endl;
-    cout<<"每年定存本金 -> "<<fYearCapital<<endl;
-    cout<<n<<" 年之后, 本金变为 -> "<<fNYearCapital<<endl;
+    cout<<"Every year time deposit capital -> "<<fYearCapital<<endl;
+    cout<<n<<"  years later -> "<<fNYearCapital<<endl;
     
     return fNYearCapital;
 }

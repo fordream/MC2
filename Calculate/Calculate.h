@@ -2,8 +2,8 @@
 //  Calculate.h
 //  MC2
 //
-//  Created by 曹国运 on 15/9/18.
-//  Copyright (c) 2015年 曹国运. All rights reserved.
+//  Created by Yun on 15/9/18.
+//  Copyright (c) 2015 Yun All rights reserved.
 //
 
 #ifndef __MC2__Calculate__
@@ -18,26 +18,26 @@ public:
     /*
      *  GetTimeDipositNYearsLater
      *
-     *  param: fMonthCapital - 月定存本金
-     *  param: fYearRate - 年利率
-     *  param: n - 年数
+     *  param: fMonthCapital - capital of month
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
      */
     double GetTimeDipositNYearsLater(float fMonthCapital, float fYearRate, int n);
     
     /*
      *  GetMonthTimeDipositOneYear
      *
-     *  param: fMonthCapital - 月定存本金
-     *  param: fYearRate - 年利率
+     *  param: fMonthCapital - capital of month
+     *  param: fYearRate - rate of year
      */
     double GetMonthTimeDipositOneYear(float fMonthCapital, float fYearRate);
     
     /*
      *  GetYearTimeDipositNYear
      *
-     *  param: fYearCapital - 年定存本金
-     *  param: fYearRate - 年利率
-     *  param: n - 年数
+     *  param: fYearCapital - capital of year
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
      */
     double GetYearTimeDipositNYear(float fYearCapital, float fYearRate, int n);
     

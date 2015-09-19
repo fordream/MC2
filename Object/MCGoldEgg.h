@@ -2,8 +2,8 @@
 //  MCGoldEgg.h
 //  MC2
 //
-//  Created by 曹国运 on 15/9/19.
-//  Copyright (c) 2015年 曹国运. All rights reserved.
+//  Created by Yun on 15/9/19.
+//  Copyright (c) 2015 Yun All rights reserved.
 //
 
 #ifndef __MC2__MCGoldEgg__
@@ -30,11 +30,11 @@ public:
     void    setGooseName(string gooseName);
     
 private:
-    int     iValue;         // 金蛋价值
-    int     iMonth;          // 金蛋被孕育时间
-    float   fYearRate;      // 金蛋孵化利率
-    double  dCapital;       // 金蛋本金，来自金鹅
-    string  sGooseName;     // 金鹅名字
+    int     iValue;         // value of egg
+    int     iMonth;          // month time of egg be breed
+    float   fYearRate;      // year rate of egg be breed
+    double  dCapital;       // capital of egg's mather goose
+    string  sGooseName;     // name of goose
     
 public:
     MCGoldEgg();
