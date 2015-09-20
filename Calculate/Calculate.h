@@ -41,6 +41,24 @@ public:
      */
     double GetYearTimeDipositNYear(float fYearCapital, float fYearRate, int n);
     
+    /*
+     *  GetMoneyAfterNMonth
+     *
+     *  param: fCapital - capital of now
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
+     */
+    double GetCapitalAfterNMonth(double fCapital, float fYearRate, int n);
+    
+    /*
+     *  GetMoneyAfterNYear
+     *
+     *  param: fCapital - capital of now
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
+     */
+    double GetMoneyAfterNYear(double fCapital, float fYearRate, int n);
+    
     Calculate();
     ~Calculate();
 };

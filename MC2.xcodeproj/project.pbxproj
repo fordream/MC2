@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE0C449A1BAD870F00FADD6B /* MCGoldEgg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44941BAD870F00FADD6B /* MCGoldEgg.cpp */; };
-		AE0C449B1BAD870F00FADD6B /* MCGoose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44961BAD870F00FADD6B /* MCGoose.cpp */; };
-		AE0C449C1BAD870F00FADD6B /* MCMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44981BAD870F00FADD6B /* MCMan.cpp */; };
-		AE0C44A21BAD872400FADD6B /* Calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C449E1BAD872400FADD6B /* Calculate.cpp */; };
-		AE0C44A31BAD872400FADD6B /* MCMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44A01BAD872400FADD6B /* MCMath.cpp */; };
-		AE0C44A51BAD873600FADD6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44A41BAD873600FADD6B /* main.cpp */; };
+		AE0C44B01BAD88AB00FADD6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44AF1BAD88AB00FADD6B /* main.cpp */; };
+		AE0C44B71BAD88BB00FADD6B /* MCGoldEgg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */; };
+		AE0C44B81BAD88BB00FADD6B /* MCGoose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */; };
+		AE0C44B91BAD88BB00FADD6B /* MCMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */; };
+		AE0C44BE1BAD88C400FADD6B /* Calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44BA1BAD88C400FADD6B /* Calculate.cpp */; };
+		AE0C44BF1BAD88C400FADD6B /* MCMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44BC1BAD88C400FADD6B /* MCMath.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,17 +29,17 @@
 
 /* Begin PBXFileReference section */
 		AE0C44891BAD86E800FADD6B /* MC2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MC2; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE0C44941BAD870F00FADD6B /* MCGoldEgg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoldEgg.cpp; path = ../../../MC2/Object/MCGoldEgg.cpp; sourceTree = "<group>"; };
-		AE0C44951BAD870F00FADD6B /* MCGoldEgg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoldEgg.h; path = ../../../MC2/Object/MCGoldEgg.h; sourceTree = "<group>"; };
-		AE0C44961BAD870F00FADD6B /* MCGoose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoose.cpp; path = ../../../MC2/Object/MCGoose.cpp; sourceTree = "<group>"; };
-		AE0C44971BAD870F00FADD6B /* MCGoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoose.h; path = ../../../MC2/Object/MCGoose.h; sourceTree = "<group>"; };
-		AE0C44981BAD870F00FADD6B /* MCMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMan.cpp; path = ../../../MC2/Object/MCMan.cpp; sourceTree = "<group>"; };
-		AE0C44991BAD870F00FADD6B /* MCMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMan.h; path = ../../../MC2/Object/MCMan.h; sourceTree = "<group>"; };
-		AE0C449E1BAD872400FADD6B /* Calculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Calculate.cpp; path = ../../../MC2/Calculate/Calculate.cpp; sourceTree = "<group>"; };
-		AE0C449F1BAD872400FADD6B /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calculate.h; path = ../../../MC2/Calculate/Calculate.h; sourceTree = "<group>"; };
-		AE0C44A01BAD872400FADD6B /* MCMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMath.cpp; path = ../../../MC2/Calculate/MCMath.cpp; sourceTree = "<group>"; };
-		AE0C44A11BAD872400FADD6B /* MCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMath.h; path = ../../../MC2/Calculate/MCMath.h; sourceTree = "<group>"; };
-		AE0C44A41BAD873600FADD6B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../MC2/main.cpp; sourceTree = "<group>"; };
+		AE0C44AF1BAD88AB00FADD6B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoldEgg.cpp; path = Object/MCGoldEgg.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44B21BAD88BB00FADD6B /* MCGoldEgg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoldEgg.h; path = Object/MCGoldEgg.h; sourceTree = SOURCE_ROOT; };
+		AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoose.cpp; path = Object/MCGoose.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44B41BAD88BB00FADD6B /* MCGoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoose.h; path = Object/MCGoose.h; sourceTree = SOURCE_ROOT; };
+		AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMan.cpp; path = Object/MCMan.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44B61BAD88BB00FADD6B /* MCMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMan.h; path = Object/MCMan.h; sourceTree = SOURCE_ROOT; };
+		AE0C44BA1BAD88C400FADD6B /* Calculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Calculate.cpp; path = Calculate/Calculate.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44BB1BAD88C400FADD6B /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calculate.h; path = Calculate/Calculate.h; sourceTree = SOURCE_ROOT; };
+		AE0C44BC1BAD88C400FADD6B /* MCMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMath.cpp; path = Calculate/MCMath.cpp; sourceTree = SOURCE_ROOT; };
+		AE0C44BD1BAD88C400FADD6B /* MCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMath.h; path = Calculate/MCMath.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		AE0C448B1BAD86E800FADD6B /* MC2 */ = {
 			isa = PBXGroup;
 			children = (
-				AE0C44A41BAD873600FADD6B /* main.cpp */,
+				AE0C44AF1BAD88AB00FADD6B /* main.cpp */,
 				AE0C449D1BAD871400FADD6B /* Calculate */,
 				AE0C44931BAD870000FADD6B /* Object */,
 			);
@@ -82,12 +82,12 @@
 		AE0C44931BAD870000FADD6B /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				AE0C44941BAD870F00FADD6B /* MCGoldEgg.cpp */,
-				AE0C44951BAD870F00FADD6B /* MCGoldEgg.h */,
-				AE0C44961BAD870F00FADD6B /* MCGoose.cpp */,
-				AE0C44971BAD870F00FADD6B /* MCGoose.h */,
-				AE0C44981BAD870F00FADD6B /* MCMan.cpp */,
-				AE0C44991BAD870F00FADD6B /* MCMan.h */,
+				AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */,
+				AE0C44B21BAD88BB00FADD6B /* MCGoldEgg.h */,
+				AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */,
+				AE0C44B41BAD88BB00FADD6B /* MCGoose.h */,
+				AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */,
+				AE0C44B61BAD88BB00FADD6B /* MCMan.h */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -95,10 +95,10 @@
 		AE0C449D1BAD871400FADD6B /* Calculate */ = {
 			isa = PBXGroup;
 			children = (
-				AE0C449E1BAD872400FADD6B /* Calculate.cpp */,
-				AE0C449F1BAD872400FADD6B /* Calculate.h */,
-				AE0C44A01BAD872400FADD6B /* MCMath.cpp */,
-				AE0C44A11BAD872400FADD6B /* MCMath.h */,
+				AE0C44BA1BAD88C400FADD6B /* Calculate.cpp */,
+				AE0C44BB1BAD88C400FADD6B /* Calculate.h */,
+				AE0C44BC1BAD88C400FADD6B /* MCMath.cpp */,
+				AE0C44BD1BAD88C400FADD6B /* MCMath.h */,
 			);
 			name = Calculate;
 			sourceTree = "<group>";
@@ -159,12 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0C44A31BAD872400FADD6B /* MCMath.cpp in Sources */,
-				AE0C449B1BAD870F00FADD6B /* MCGoose.cpp in Sources */,
-				AE0C44A51BAD873600FADD6B /* main.cpp in Sources */,
-				AE0C449C1BAD870F00FADD6B /* MCMan.cpp in Sources */,
-				AE0C449A1BAD870F00FADD6B /* MCGoldEgg.cpp in Sources */,
-				AE0C44A21BAD872400FADD6B /* Calculate.cpp in Sources */,
+				AE0C44B01BAD88AB00FADD6B /* main.cpp in Sources */,
+				AE0C44BF1BAD88C400FADD6B /* MCMath.cpp in Sources */,
+				AE0C44B81BAD88BB00FADD6B /* MCGoose.cpp in Sources */,
+				AE0C44B91BAD88BB00FADD6B /* MCMan.cpp in Sources */,
+				AE0C44B71BAD88BB00FADD6B /* MCGoldEgg.cpp in Sources */,
+				AE0C44BE1BAD88C400FADD6B /* Calculate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +281,7 @@
 				AE0C44921BAD86E800FADD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,12 +11,21 @@
 
 #include <stdio.h>
 #include <iostream>
+
+#include "Calculate.h"
+#include "MCGoldEgg.h"
+
 using namespace std;
 
 class MCGoose
 {
 public:
+    void    describe(void) const;
 private:
+    string  sName;
+    int     iMonthOld;   // month
+    int     iValue;      // value
+    float   fYearRate;   // year rate
 };
 
 #endif /* defined(__MC2__MCGoose__) */
