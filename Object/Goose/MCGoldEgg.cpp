@@ -67,6 +67,18 @@ void MCGoldEgg::growthYears(int yearCount, float yearRate)
     m_dValue = fAllMoney - m_dCapital;
 }
 
+double MCGoldEgg::costEggPercent(float fPercent)
+{
+    double dCosted = m_dValue * fPercent;
+    return costEggValue(dCosted);
+}
+
+double MCGoldEgg::costEggValue(double dValue)
+{
+    m_dValue -= dValue;
+    return dValue;
+}
+
 double MCGoldEgg::getValue() const
 {
     return m_dValue;

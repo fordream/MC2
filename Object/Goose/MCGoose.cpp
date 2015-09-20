@@ -7,3 +7,7 @@
 //
 
 #include "MCGoose.h"
+#include <iostream>
+using namespace std;
+
+

@@ -28,14 +28,49 @@ struct GOLD_EGG
 class MCGoldEgg
 {
 public:
+    /*
+     *  describe
+     *
+     *  param:  void   -   void
+     *  return: void   -   void
+     */
     void        describe(void) const;
-    void        growthMonths(int monthCount = 1);               // egg growth months , ( 1 )
-    void        growthMonths(int monthCount, float yearRate);   // egg growth months ,  use rate
-    void        growthYears(int yearCount = 1);                 // egg growth years , ( 1 )
-    void        growthYears(int yearCount, float yearRate);     // egg growth years ,  use rate
     
-    double      costEggPercent(float percent);      // cost percent of egg
-    double      costEggValue(double value);         // cost value of egg
+    /*
+     *  growthMonths
+     *
+     *  param:  monthCount   -   monthCount months after
+     *  param:  yearRate   -   temp yearRate for this growth
+     *  return: void   -   void
+     */
+    void        growthMonths(int monthCount = 1);
+    void        growthMonths(int monthCount, float yearRate);
+    
+    /*
+     *  growthYears
+     *
+     *  param:  yearCount   -   yearCount years after
+     *  param:  yearRate   -   temp yearRate for this growth
+     *  return: void   -   void
+     */
+    void        growthYears(int yearCount = 1);
+    void        growthYears(int yearCount, float yearRate);
+    
+    /*
+     *  costEggPercent
+     *
+     *  param:  fPercent   -   percent of egg value
+     *  return: dCosted   -   costed of value
+     */
+    double      costEggPercent(float fPercent);
+
+    /*
+     *  costEggValue
+     *
+     *  param:  dValue   -   value of egg
+     *  return: dCosted   -   cost of value
+     */
+    double      costEggValue(double dValue);
     
 public:
     double      getValue(void) const;

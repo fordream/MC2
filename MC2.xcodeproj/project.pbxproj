@@ -8,11 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		AE0C44B01BAD88AB00FADD6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44AF1BAD88AB00FADD6B /* main.cpp */; };
-		AE0C44B71BAD88BB00FADD6B /* MCGoldEgg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */; };
-		AE0C44B81BAD88BB00FADD6B /* MCGoose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */; };
 		AE0C44B91BAD88BB00FADD6B /* MCMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */; };
 		AE0C44BE1BAD88C400FADD6B /* Calculate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44BA1BAD88C400FADD6B /* Calculate.cpp */; };
 		AE0C44BF1BAD88C400FADD6B /* MCMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE0C44BC1BAD88C400FADD6B /* MCMath.cpp */; };
+		AE944CF81BAF014700988829 /* MCMoney.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944CF61BAF014700988829 /* MCMoney.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944CFD1BAF018800988829 /* MCGoldEgg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944CF91BAF018800988829 /* MCGoldEgg.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944CFE1BAF018800988829 /* MCGoose.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944CFB1BAF018800988829 /* MCGoose.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D021BAF020A00988829 /* MCEarnSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D001BAF020A00988829 /* MCEarnSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D0F1BAF034E00988829 /* MCPaySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D0D1BAF034E00988829 /* MCPaySystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D271BAF07F800988829 /* MCBorrowSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D251BAF07F800988829 /* MCBorrowSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D2E1BAF0A0000988829 /* MCCreditCardSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D2C1BAF0A0000988829 /* MCCreditCardSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D311BAF0A1A00988829 /* MCCarSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D2F1BAF0A1A00988829 /* MCCarSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D381BAF0A3000988829 /* MCHouseDecorate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D321BAF0A3000988829 /* MCHouseDecorate.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D391BAF0A3000988829 /* MCHousePurchase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D341BAF0A3000988829 /* MCHousePurchase.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D3A1BAF0A3000988829 /* MCHouseSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D361BAF0A3000988829 /* MCHouseSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D3D1BAF0A4000988829 /* MCInsuranceSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D3B1BAF0A4000988829 /* MCInsuranceSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D401BAF0A5900988829 /* MCMarrySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D3E1BAF0A5900988829 /* MCMarrySystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D431BAF0A7800988829 /* MCGivingSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D411BAF0A7800988829 /* MCGivingSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D461BAF0AA800988829 /* MCSendCashSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D441BAF0AA800988829 /* MCSendCashSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D491BAF0AC500988829 /* MCChildrenSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D471BAF0AC500988829 /* MCChildrenSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D4C1BAF0AD800988829 /* MCParentSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D4A1BAF0AD800988829 /* MCParentSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D4F1BAF0AEA00988829 /* MCHappySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D4D1BAF0AEA00988829 /* MCHappySystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D521BAF0AFA00988829 /* MCGrowthSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D501BAF0AFA00988829 /* MCGrowthSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D551BAF0B0E00988829 /* MCBeGivenSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D531BAF0B0E00988829 /* MCBeGivenSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D581BAF0B1E00988829 /* MCCauseSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D561BAF0B1E00988829 /* MCCauseSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AE944D5B1BAF0B2E00988829 /* MCWorkSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE944D591BAF0B2E00988829 /* MCWorkSystem.cpp */; settings = {ASSET_TAGS = (); }; };
+		AECC651C1BAE601F00314F4A /* MCTimeSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AECC651A1BAE601F00314F4A /* MCTimeSystem.cpp */; };
+		AECC65201BAE606100314F4A /* MCTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AECC651E1BAE606100314F4A /* MCTime.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,16 +52,60 @@
 /* Begin PBXFileReference section */
 		AE0C44891BAD86E800FADD6B /* MC2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MC2; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0C44AF1BAD88AB00FADD6B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoldEgg.cpp; path = Object/MCGoldEgg.cpp; sourceTree = SOURCE_ROOT; };
-		AE0C44B21BAD88BB00FADD6B /* MCGoldEgg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoldEgg.h; path = Object/MCGoldEgg.h; sourceTree = SOURCE_ROOT; };
-		AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoose.cpp; path = Object/MCGoose.cpp; sourceTree = SOURCE_ROOT; };
-		AE0C44B41BAD88BB00FADD6B /* MCGoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoose.h; path = Object/MCGoose.h; sourceTree = SOURCE_ROOT; };
 		AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMan.cpp; path = Object/MCMan.cpp; sourceTree = SOURCE_ROOT; };
 		AE0C44B61BAD88BB00FADD6B /* MCMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMan.h; path = Object/MCMan.h; sourceTree = SOURCE_ROOT; };
 		AE0C44BA1BAD88C400FADD6B /* Calculate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Calculate.cpp; path = Calculate/Calculate.cpp; sourceTree = SOURCE_ROOT; };
 		AE0C44BB1BAD88C400FADD6B /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Calculate.h; path = Calculate/Calculate.h; sourceTree = SOURCE_ROOT; };
 		AE0C44BC1BAD88C400FADD6B /* MCMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMath.cpp; path = Calculate/MCMath.cpp; sourceTree = SOURCE_ROOT; };
 		AE0C44BD1BAD88C400FADD6B /* MCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMath.h; path = Calculate/MCMath.h; sourceTree = SOURCE_ROOT; };
+		AE944CF61BAF014700988829 /* MCMoney.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMoney.cpp; path = Object/Money/MCMoney.cpp; sourceTree = SOURCE_ROOT; };
+		AE944CF71BAF014700988829 /* MCMoney.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCMoney.hpp; path = Object/Money/MCMoney.hpp; sourceTree = SOURCE_ROOT; };
+		AE944CF91BAF018800988829 /* MCGoldEgg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoldEgg.cpp; path = Object/Goose/MCGoldEgg.cpp; sourceTree = SOURCE_ROOT; };
+		AE944CFA1BAF018800988829 /* MCGoldEgg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoldEgg.h; path = Object/Goose/MCGoldEgg.h; sourceTree = SOURCE_ROOT; };
+		AE944CFB1BAF018800988829 /* MCGoose.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGoose.cpp; path = Object/Goose/MCGoose.cpp; sourceTree = SOURCE_ROOT; };
+		AE944CFC1BAF018800988829 /* MCGoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGoose.h; path = Object/Goose/MCGoose.h; sourceTree = SOURCE_ROOT; };
+		AE944D001BAF020A00988829 /* MCEarnSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCEarnSystem.cpp; path = Object/Earnning/MCEarnSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D011BAF020A00988829 /* MCEarnSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCEarnSystem.hpp; path = Object/Earnning/MCEarnSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D0D1BAF034E00988829 /* MCPaySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCPaySystem.cpp; path = Object/Pay/MCPaySystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D0E1BAF034E00988829 /* MCPaySystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCPaySystem.hpp; path = Object/Pay/MCPaySystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D251BAF07F800988829 /* MCBorrowSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCBorrowSystem.cpp; path = Object/Borrow/MCBorrowSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D261BAF07F800988829 /* MCBorrowSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCBorrowSystem.hpp; path = Object/Borrow/MCBorrowSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D2C1BAF0A0000988829 /* MCCreditCardSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCCreditCardSystem.cpp; path = Object/Borrow/CreditCard/MCCreditCardSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D2D1BAF0A0000988829 /* MCCreditCardSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCCreditCardSystem.hpp; path = Object/Borrow/CreditCard/MCCreditCardSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D2F1BAF0A1A00988829 /* MCCarSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCCarSystem.cpp; path = Object/Pay/Car/MCCarSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D301BAF0A1A00988829 /* MCCarSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCCarSystem.hpp; path = Object/Pay/Car/MCCarSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D321BAF0A3000988829 /* MCHouseDecorate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCHouseDecorate.cpp; path = Object/Pay/House/MCHouseDecorate.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D331BAF0A3000988829 /* MCHouseDecorate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCHouseDecorate.hpp; path = Object/Pay/House/MCHouseDecorate.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D341BAF0A3000988829 /* MCHousePurchase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCHousePurchase.cpp; path = Object/Pay/House/MCHousePurchase.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D351BAF0A3000988829 /* MCHousePurchase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCHousePurchase.hpp; path = Object/Pay/House/MCHousePurchase.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D361BAF0A3000988829 /* MCHouseSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCHouseSystem.cpp; path = Object/Pay/House/MCHouseSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D371BAF0A3000988829 /* MCHouseSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCHouseSystem.h; path = Object/Pay/House/MCHouseSystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D3B1BAF0A4000988829 /* MCInsuranceSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCInsuranceSystem.cpp; path = Object/Pay/Insurance/MCInsuranceSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D3C1BAF0A4000988829 /* MCInsuranceSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCInsuranceSystem.h; path = Object/Pay/Insurance/MCInsuranceSystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D3E1BAF0A5900988829 /* MCMarrySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCMarrySystem.cpp; path = Object/Pay/Marry/MCMarrySystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D3F1BAF0A5900988829 /* MCMarrySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMarrySystem.h; path = Object/Pay/Marry/MCMarrySystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D411BAF0A7800988829 /* MCGivingSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGivingSystem.cpp; path = Object/Pay/Giving/MCGivingSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D421BAF0A7800988829 /* MCGivingSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCGivingSystem.hpp; path = Object/Pay/Giving/MCGivingSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D441BAF0AA800988829 /* MCSendCashSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCSendCashSystem.cpp; path = Object/Pay/Giving/SendCash/MCSendCashSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D451BAF0AA800988829 /* MCSendCashSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCSendCashSystem.hpp; path = Object/Pay/Giving/SendCash/MCSendCashSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D471BAF0AC500988829 /* MCChildrenSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCChildrenSystem.cpp; path = Object/Pay/Giving/Children/MCChildrenSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D481BAF0AC500988829 /* MCChildrenSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCChildrenSystem.h; path = Object/Pay/Giving/Children/MCChildrenSystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D4A1BAF0AD800988829 /* MCParentSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCParentSystem.cpp; path = Object/Pay/Giving/Parent/MCParentSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D4B1BAF0AD800988829 /* MCParentSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCParentSystem.h; path = Object/Pay/Giving/Parent/MCParentSystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D4D1BAF0AEA00988829 /* MCHappySystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCHappySystem.cpp; path = Object/Pay/Happy/MCHappySystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D4E1BAF0AEA00988829 /* MCHappySystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCHappySystem.h; path = Object/Pay/Happy/MCHappySystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D501BAF0AFA00988829 /* MCGrowthSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCGrowthSystem.cpp; path = Object/Pay/Growth/MCGrowthSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D511BAF0AFA00988829 /* MCGrowthSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCGrowthSystem.h; path = Object/Pay/Growth/MCGrowthSystem.h; sourceTree = SOURCE_ROOT; };
+		AE944D531BAF0B0E00988829 /* MCBeGivenSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCBeGivenSystem.cpp; path = Object/Earnning/BeGiven/MCBeGivenSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D541BAF0B0E00988829 /* MCBeGivenSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCBeGivenSystem.hpp; path = Object/Earnning/BeGiven/MCBeGivenSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D561BAF0B1E00988829 /* MCCauseSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCCauseSystem.cpp; path = Object/Earnning/Cause/MCCauseSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D571BAF0B1E00988829 /* MCCauseSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MCCauseSystem.hpp; path = Object/Earnning/Cause/MCCauseSystem.hpp; sourceTree = SOURCE_ROOT; };
+		AE944D591BAF0B2E00988829 /* MCWorkSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCWorkSystem.cpp; path = Object/Earnning/Work/MCWorkSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AE944D5A1BAF0B2E00988829 /* MCWorkSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCWorkSystem.h; path = Object/Earnning/Work/MCWorkSystem.h; sourceTree = SOURCE_ROOT; };
+		AECC651A1BAE601F00314F4A /* MCTimeSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCTimeSystem.cpp; path = Object/Time/MCTimeSystem.cpp; sourceTree = SOURCE_ROOT; };
+		AECC651B1BAE601F00314F4A /* MCTimeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTimeSystem.h; path = Object/Time/MCTimeSystem.h; sourceTree = SOURCE_ROOT; };
+		AECC651E1BAE606100314F4A /* MCTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCTime.cpp; path = Object/Time/MCTime.cpp; sourceTree = SOURCE_ROOT; };
+		AECC651F1BAE606100314F4A /* MCTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTime.h; path = Object/Time/MCTime.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +148,12 @@
 		AE0C44931BAD870000FADD6B /* Object */ = {
 			isa = PBXGroup;
 			children = (
-				AE0C44B11BAD88BB00FADD6B /* MCGoldEgg.cpp */,
-				AE0C44B21BAD88BB00FADD6B /* MCGoldEgg.h */,
-				AE0C44B31BAD88BB00FADD6B /* MCGoose.cpp */,
-				AE0C44B41BAD88BB00FADD6B /* MCGoose.h */,
+				AE944D241BAF07CF00988829 /* Borrow */,
+				AE944D0C1BAF033300988829 /* Pay */,
+				AE944CFF1BAF01CC00988829 /* Earnning */,
+				AE944CF21BAF00FE00988829 /* Money */,
+				AECC651D1BAE604D00314F4A /* Time */,
+				AECC65191BAE5FD100314F4A /* Goose */,
 				AE0C44B51BAD88BB00FADD6B /* MCMan.cpp */,
 				AE0C44B61BAD88BB00FADD6B /* MCMan.h */,
 			);
@@ -101,6 +169,208 @@
 				AE0C44BD1BAD88C400FADD6B /* MCMath.h */,
 			);
 			name = Calculate;
+			sourceTree = "<group>";
+		};
+		AE944CF21BAF00FE00988829 /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				AE944CF61BAF014700988829 /* MCMoney.cpp */,
+				AE944CF71BAF014700988829 /* MCMoney.hpp */,
+			);
+			name = Money;
+			sourceTree = "<group>";
+		};
+		AE944CFF1BAF01CC00988829 /* Earnning */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D111BAF048B00988829 /* BeGiven */,
+				AE944D101BAF047E00988829 /* Cause */,
+				AECC65251BAE618100314F4A /* Work */,
+				AE944D001BAF020A00988829 /* MCEarnSystem.cpp */,
+				AE944D011BAF020A00988829 /* MCEarnSystem.hpp */,
+			);
+			name = Earnning;
+			sourceTree = "<group>";
+		};
+		AE944D0C1BAF033300988829 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D1A1BAF06B200988829 /* Car */,
+				AECC652D1BAE61E500314F4A /* House */,
+				AECC65391BAE62A900314F4A /* Insurance */,
+				AECC653D1BAE630500314F4A /* Marry */,
+				AE944D121BAF04A700988829 /* Giving */,
+				AECC65291BAE61B200314F4A /* Happy */,
+				AECC65211BAE612200314F4A /* Growth */,
+				AE944D0D1BAF034E00988829 /* MCPaySystem.cpp */,
+				AE944D0E1BAF034E00988829 /* MCPaySystem.hpp */,
+			);
+			name = Pay;
+			sourceTree = "<group>";
+		};
+		AE944D101BAF047E00988829 /* Cause */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D561BAF0B1E00988829 /* MCCauseSystem.cpp */,
+				AE944D571BAF0B1E00988829 /* MCCauseSystem.hpp */,
+			);
+			name = Cause;
+			sourceTree = "<group>";
+		};
+		AE944D111BAF048B00988829 /* BeGiven */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D531BAF0B0E00988829 /* MCBeGivenSystem.cpp */,
+				AE944D541BAF0B0E00988829 /* MCBeGivenSystem.hpp */,
+			);
+			name = BeGiven;
+			sourceTree = "<group>";
+		};
+		AE944D121BAF04A700988829 /* Giving */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D411BAF0A7800988829 /* MCGivingSystem.cpp */,
+				AE944D421BAF0A7800988829 /* MCGivingSystem.hpp */,
+				AE944D161BAF05EA00988829 /* SendCash */,
+				AECC65351BAE624C00314F4A /* Children */,
+				AECC65311BAE621700314F4A /* Parent */,
+			);
+			name = Giving;
+			sourceTree = "<group>";
+		};
+		AE944D161BAF05EA00988829 /* SendCash */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D441BAF0AA800988829 /* MCSendCashSystem.cpp */,
+				AE944D451BAF0AA800988829 /* MCSendCashSystem.hpp */,
+			);
+			name = SendCash;
+			sourceTree = "<group>";
+		};
+		AE944D1A1BAF06B200988829 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D2F1BAF0A1A00988829 /* MCCarSystem.cpp */,
+				AE944D301BAF0A1A00988829 /* MCCarSystem.hpp */,
+			);
+			name = Car;
+			sourceTree = "<group>";
+		};
+		AE944D241BAF07CF00988829 /* Borrow */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D2B1BAF09EC00988829 /* CreditCard */,
+				AE944D251BAF07F800988829 /* MCBorrowSystem.cpp */,
+				AE944D261BAF07F800988829 /* MCBorrowSystem.hpp */,
+			);
+			name = Borrow;
+			sourceTree = "<group>";
+		};
+		AE944D2B1BAF09EC00988829 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D2C1BAF0A0000988829 /* MCCreditCardSystem.cpp */,
+				AE944D2D1BAF0A0000988829 /* MCCreditCardSystem.hpp */,
+			);
+			name = CreditCard;
+			sourceTree = "<group>";
+		};
+		AECC65191BAE5FD100314F4A /* Goose */ = {
+			isa = PBXGroup;
+			children = (
+				AE944CF91BAF018800988829 /* MCGoldEgg.cpp */,
+				AE944CFA1BAF018800988829 /* MCGoldEgg.h */,
+				AE944CFB1BAF018800988829 /* MCGoose.cpp */,
+				AE944CFC1BAF018800988829 /* MCGoose.h */,
+			);
+			name = Goose;
+			sourceTree = "<group>";
+		};
+		AECC651D1BAE604D00314F4A /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				AECC651A1BAE601F00314F4A /* MCTimeSystem.cpp */,
+				AECC651B1BAE601F00314F4A /* MCTimeSystem.h */,
+				AECC651E1BAE606100314F4A /* MCTime.cpp */,
+				AECC651F1BAE606100314F4A /* MCTime.h */,
+			);
+			name = Time;
+			sourceTree = "<group>";
+		};
+		AECC65211BAE612200314F4A /* Growth */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D501BAF0AFA00988829 /* MCGrowthSystem.cpp */,
+				AE944D511BAF0AFA00988829 /* MCGrowthSystem.h */,
+			);
+			name = Growth;
+			sourceTree = "<group>";
+		};
+		AECC65251BAE618100314F4A /* Work */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D591BAF0B2E00988829 /* MCWorkSystem.cpp */,
+				AE944D5A1BAF0B2E00988829 /* MCWorkSystem.h */,
+			);
+			name = Work;
+			sourceTree = "<group>";
+		};
+		AECC65291BAE61B200314F4A /* Happy */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D4D1BAF0AEA00988829 /* MCHappySystem.cpp */,
+				AE944D4E1BAF0AEA00988829 /* MCHappySystem.h */,
+			);
+			name = Happy;
+			sourceTree = "<group>";
+		};
+		AECC652D1BAE61E500314F4A /* House */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D321BAF0A3000988829 /* MCHouseDecorate.cpp */,
+				AE944D331BAF0A3000988829 /* MCHouseDecorate.hpp */,
+				AE944D341BAF0A3000988829 /* MCHousePurchase.cpp */,
+				AE944D351BAF0A3000988829 /* MCHousePurchase.hpp */,
+				AE944D361BAF0A3000988829 /* MCHouseSystem.cpp */,
+				AE944D371BAF0A3000988829 /* MCHouseSystem.h */,
+			);
+			name = House;
+			sourceTree = "<group>";
+		};
+		AECC65311BAE621700314F4A /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D4A1BAF0AD800988829 /* MCParentSystem.cpp */,
+				AE944D4B1BAF0AD800988829 /* MCParentSystem.h */,
+			);
+			name = Parent;
+			sourceTree = "<group>";
+		};
+		AECC65351BAE624C00314F4A /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D471BAF0AC500988829 /* MCChildrenSystem.cpp */,
+				AE944D481BAF0AC500988829 /* MCChildrenSystem.h */,
+			);
+			name = Children;
+			sourceTree = "<group>";
+		};
+		AECC65391BAE62A900314F4A /* Insurance */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D3B1BAF0A4000988829 /* MCInsuranceSystem.cpp */,
+				AE944D3C1BAF0A4000988829 /* MCInsuranceSystem.h */,
+			);
+			name = Insurance;
+			sourceTree = "<group>";
+		};
+		AECC653D1BAE630500314F4A /* Marry */ = {
+			isa = PBXGroup;
+			children = (
+				AE944D3E1BAF0A5900988829 /* MCMarrySystem.cpp */,
+				AE944D3F1BAF0A5900988829 /* MCMarrySystem.h */,
+			);
+			name = Marry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,12 +429,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE944D431BAF0A7800988829 /* MCGivingSystem.cpp in Sources */,
+				AE944D551BAF0B0E00988829 /* MCBeGivenSystem.cpp in Sources */,
+				AE944D381BAF0A3000988829 /* MCHouseDecorate.cpp in Sources */,
 				AE0C44B01BAD88AB00FADD6B /* main.cpp in Sources */,
+				AE944D391BAF0A3000988829 /* MCHousePurchase.cpp in Sources */,
+				AE944D4F1BAF0AEA00988829 /* MCHappySystem.cpp in Sources */,
+				AE944D401BAF0A5900988829 /* MCMarrySystem.cpp in Sources */,
+				AE944CFE1BAF018800988829 /* MCGoose.cpp in Sources */,
+				AECC651C1BAE601F00314F4A /* MCTimeSystem.cpp in Sources */,
+				AECC65201BAE606100314F4A /* MCTime.cpp in Sources */,
+				AE944D271BAF07F800988829 /* MCBorrowSystem.cpp in Sources */,
+				AE944D2E1BAF0A0000988829 /* MCCreditCardSystem.cpp in Sources */,
+				AE944D0F1BAF034E00988829 /* MCPaySystem.cpp in Sources */,
+				AE944D5B1BAF0B2E00988829 /* MCWorkSystem.cpp in Sources */,
+				AE944CF81BAF014700988829 /* MCMoney.cpp in Sources */,
 				AE0C44BF1BAD88C400FADD6B /* MCMath.cpp in Sources */,
-				AE0C44B81BAD88BB00FADD6B /* MCGoose.cpp in Sources */,
+				AE944D491BAF0AC500988829 /* MCChildrenSystem.cpp in Sources */,
+				AE944CFD1BAF018800988829 /* MCGoldEgg.cpp in Sources */,
+				AE944D461BAF0AA800988829 /* MCSendCashSystem.cpp in Sources */,
 				AE0C44B91BAD88BB00FADD6B /* MCMan.cpp in Sources */,
-				AE0C44B71BAD88BB00FADD6B /* MCGoldEgg.cpp in Sources */,
+				AE944D021BAF020A00988829 /* MCEarnSystem.cpp in Sources */,
+				AE944D311BAF0A1A00988829 /* MCCarSystem.cpp in Sources */,
+				AE944D3D1BAF0A4000988829 /* MCInsuranceSystem.cpp in Sources */,
+				AE944D521BAF0AFA00988829 /* MCGrowthSystem.cpp in Sources */,
+				AE944D581BAF0B1E00988829 /* MCCauseSystem.cpp in Sources */,
 				AE0C44BE1BAD88C400FADD6B /* Calculate.cpp in Sources */,
+				AE944D4C1BAF0AD800988829 /* MCParentSystem.cpp in Sources */,
+				AE944D3A1BAF0A3000988829 /* MCHouseSystem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
