@@ -13,19 +13,19 @@ int main(int argc, char const *argv[])
 		fMonthCapital = 0.0;
 		fYearRate = 0.0;
 		n = 0;
-		cout<<"请输入月定存本金：";
+		cout<<"Please input Month Time Desipot Capital ：";
 		cin>>fMonthCapital;
 		
-		cout <<"请输入年利率:";
+		cout <<"Please input Year Rate :";
 		cin>> fYearRate;
 		
-		cout<<"请输入年数：";
+		cout<<"Please input count of year :";
 		cin>>n;
 		
 		cal->GetTimeDipositNYearsLater(fMonthCapital, fYearRate, n);
 		
 		
-		cout<<"如果继续请输入 1 ，否则任意键退出。。。";
+		cout<<"Input 1 for Continue，else any key to Exit 。。。";
 		cin>>isContinue;
 		cout<<"==========================================="<<endl;
 	} while(isContinue == 1);

@@ -14,15 +14,16 @@ using namespace std;
 double Calculate::GetTimeDipositNYearsLater(float fMonthCapital, float fYearRate, int n)
 {
     cout<<endl;
-    cout<<"Month time deposit -> "<<fMonthCapital<<" Yuan ."<<endl;
-    cout<<"Year Rate -> "<<fYearRate<<endl;
-    cout<<"Num of year    -> "<<n<<" years after ."<<endl;
+    cout<<"Month time deposit   -> "<<fMonthCapital<<" Yuan ."<<endl;
+    cout<<"Year Rate            -> "<<fYearRate<<endl;
+    cout<<"Num of year          -> "<<n<<" years after ."<<endl;
     
     double fYearCapital = GetMonthTimeDipositOneYear(fMonthCapital, fYearRate);
     double fNYearCapital = GetYearTimeDipositNYear(fYearCapital, fYearRate, n);
     cout<<endl;
-    cout<<"Every year time deposit capital -> "<<fYearCapital<<endl;
-    cout<<n<<"  years later -> "<<fNYearCapital<<endl;
+    cout<<"Every year time deposit capital  -> "<<fYearCapital<<endl;
+    cout<<n<<" years later                   -> "<<fNYearCapital<<endl;
+    cout<<endl;
     
     return fNYearCapital;
 }
