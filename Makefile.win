@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o ../Object/MCGoldEgg.o ../Object/MCGoose.o ../Object/MCMan.o ../Calculate/Calculate.o ../Calculate/MCMath.o
-LINKOBJ  = main.o ../Object/MCGoldEgg.o ../Object/MCGoose.o ../Object/MCMan.o ../Calculate/Calculate.o ../Calculate/MCMath.o
+OBJ      = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o
+LINKOBJ  = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o
 LIBS     = -L"D:/AppData/Dev-Cpp/MinGW64/lib" -L"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -24,20 +24,14 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-main.o: main.c
-	$(CPP) -c main.c -o main.o $(CXXFLAGS)
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-../Object/MCGoldEgg.o: ../Object/MCGoldEgg.cpp
-	$(CPP) -c ../Object/MCGoldEgg.cpp -o ../Object/MCGoldEgg.o $(CXXFLAGS)
+Object/MCMan.o: Object/MCMan.cpp
+	$(CPP) -c Object/MCMan.cpp -o Object/MCMan.o $(CXXFLAGS)
 
-../Object/MCGoose.o: ../Object/MCGoose.cpp
-	$(CPP) -c ../Object/MCGoose.cpp -o ../Object/MCGoose.o $(CXXFLAGS)
+Calculate/Calculate.o: Calculate/Calculate.cpp
+	$(CPP) -c Calculate/Calculate.cpp -o Calculate/Calculate.o $(CXXFLAGS)
 
-../Object/MCMan.o: ../Object/MCMan.cpp
-	$(CPP) -c ../Object/MCMan.cpp -o ../Object/MCMan.o $(CXXFLAGS)
-
-../Calculate/Calculate.o: ../Calculate/Calculate.cpp
-	$(CPP) -c ../Calculate/Calculate.cpp -o ../Calculate/Calculate.o $(CXXFLAGS)
-
-../Calculate/MCMath.o: ../Calculate/MCMath.cpp
-	$(CPP) -c ../Calculate/MCMath.cpp -o ../Calculate/MCMath.o $(CXXFLAGS)
+Calculate/MCMath.o: Calculate/MCMath.cpp
+	$(CPP) -c Calculate/MCMath.cpp -o Calculate/MCMath.o $(CXXFLAGS)
