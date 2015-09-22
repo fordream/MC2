@@ -37,6 +37,7 @@ public:
      */
     void    addMoney(double dMoney);
     void    addMoney(double dMoney, string sDeclare);
+    
     /*
      *  subMoney
      *
@@ -65,7 +66,7 @@ private:
     int     m_iValue;      // value
     float   m_fYearRate;   // year rate
     
-private:
+public:
     MCGoose();
     ~MCGoose();
 };

@@ -106,6 +106,7 @@
 		AECC651B1BAE601F00314F4A /* MCTimeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTimeSystem.h; path = Object/Time/MCTimeSystem.h; sourceTree = SOURCE_ROOT; };
 		AECC651E1BAE606100314F4A /* MCTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MCTime.cpp; path = Object/Time/MCTime.cpp; sourceTree = SOURCE_ROOT; };
 		AECC651F1BAE606100314F4A /* MCTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCTime.h; path = Object/Time/MCTime.h; sourceTree = SOURCE_ROOT; };
+		AEF137631BB19C3100AA5C40 /* MCDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCDef.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0C44AF1BAD88AB00FADD6B /* main.cpp */,
+				AEF137631BB19C3100AA5C40 /* MCDef.h */,
 				AE0C449D1BAD871400FADD6B /* Calculate */,
 				AE0C44931BAD870000FADD6B /* Object */,
 			);
