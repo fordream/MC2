@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include "../../MCDef.h"
+#include "../../Calculate/Calculate.h"
 #include <iostream>
 
 using namespace std;
@@ -57,7 +58,7 @@ public:
      */
     void    addMoney(float fMoney);
     void    addMoney(MONEY mMoney);
-    friend void addMoney(MCMoney& mcMoney);
+    void    addMoney(MCMoney& mcMoney);
     
     /*
      *  subMoney
@@ -69,7 +70,7 @@ public:
      */
     void    subMoney(float fMoney);
     void    subMoney(MONEY mMoney);
-    friend void subMoney(MCMoney& mcMoney);
+    void    subMoney(MCMoney& mcMoney);
     
     /*
      *  +, -, +=, -=
@@ -83,8 +84,8 @@ public:
     MCMoney operator-(MONEY mMoney);
     void    operator+=(MONEY mMoney);
     void    operator-=(MONEY mMoney);
-    friend void operator+=(MCMoney& mcMoney);
-    friend void operator-=(MCMoney& mcMoney);
+    void operator+=(MCMoney& mcMoney);
+    void operator-=(MCMoney& mcMoney);
 
 private:
     float       m_fValue;         // value of money
@@ -95,6 +96,7 @@ private:
     MONEY_TYPE  m_mtType;         // money type
 
     int         m_deltaYear;      // delta years
+    Calculate   *m_Calculate;     // calculate
     
 public:
     MCMoney();

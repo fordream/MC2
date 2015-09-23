@@ -7,18 +7,28 @@
 //
 
 #include "MCMoney.hpp"
-#include "../../Calculate/Calculate.h"
+
+MCMoney::MCMoney()
+{
+    m_deltaYear     = 0;
+    m_Calculate     = new Calculate();
+}
+MCMoney::~MCMoney()
+{
+    delete m_Calculate;
+}
 
 MCMoney::MCMoney(MCMoney& mcMoney)
 {
 	m_fValue 		= mcMoney.m_fValue;
 	m_fCurValue 	= mcMoney.m_fCurValue;
 	m_iYearIndex	= mcMoney.m_iYearIndex;
-	m_iCurYearIndex	= mcMoney.iCurYearIndex;
+	m_iCurYearIndex	= mcMoney.m_iCurYearIndex;
 	m_fROD 			= mcMoney.m_fROD;
 	m_mtType		= mcMoney.m_mtType; 
 
 	m_deltaYear 	= m_iYearIndex - m_iCurYearIndex;
+    m_Calculate     = new Calculate();
 }
 
 MCMoney::MCMoney(MONEY mMoney)
@@ -30,7 +40,8 @@ MCMoney::MCMoney(MONEY mMoney)
 	m_fROD 			= mMoney.fROD;
 	m_mtType 		= mMoney.mtType;
 
-	m_deltaYear 	= m_iYearIndex - m_iCurYearIndex;
+    m_deltaYear 	= m_iYearIndex - m_iCurYearIndex;
+    m_Calculate     = new Calculate();
 }
 
 MCMoney::MCMoney(float fValue,
@@ -46,12 +57,13 @@ m_iCurYearIndex(iCurYearIndex),
 m_fROD(fROD),
 m_mtType(mtType)
 {
-	m_deltaYear 	= m_iYearIndex - m_iCurYearIndex;
+    m_deltaYear 	= m_iYearIndex - m_iCurYearIndex;
+    m_Calculate     = new Calculate();
 }
 
 void MCMoney::describe(void) const
 {
-	cout<<"Good, this money describe()"endl;
+	cout<<"Good, this money describe()"<<endl;
 	cout<<"-----------------------------------------"<<endl;
 	cout<<"Value 		-> "<<m_fValue<<endl;
 	cout<<"CurValue 	-> "<<m_fCurValue<<endl;
@@ -59,14 +71,14 @@ void MCMoney::describe(void) const
 	cout<<"CurYearIndex -> "<<m_iCurYearIndex<<endl;
 	cout<<"DeltaYears	-> "<<m_deltaYear<<endl;
 	cout<<"ROD 			-> "<<m_fROD<<endl;
-	cout<<"Type 		->"<<mtType<<endl;
+	cout<<"Type 		->"<<m_mtType<<endl;
 	cout<<"-----------------------------------------"<<endl;
 }
 
 void MCMoney::addMoney(float fMoney)
 {
 	m_fValue 	+= fMoney;
-	m_fCurValue += GetMoneyBeforeNYear(fMoney, -m_fROD,	m_deltaYear);
+	m_fCurValue += m_Calculate->GetMoneyBeforeNYear(fMoney, -m_fROD,	m_deltaYear);
 }
 void MCMoney::addMoney(MONEY mMoney)
 {
@@ -76,9 +88,9 @@ void MCMoney::addMoney(MONEY mMoney)
 		// switch money type
 	}
 	m_fCurValue += mMoney.fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
-friend void MCMoney::addMoney(MCMoney& mcMoney)
+void MCMoney::addMoney(MCMoney& mcMoney)
 {
 	if (mcMoney.m_mtType != m_mtType)
 	{
@@ -86,13 +98,13 @@ friend void MCMoney::addMoney(MCMoney& mcMoney)
 		// switch money type
 	}
 	m_fCurValue += mcMoney.m_fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 
 void MCMoney::subMoney(float fMoney)
 {
 	m_fValue 	-= fMoney;
-	m_fCurValue -= GetMoneyBeforeNYear(fMoney, -m_fROD,	m_deltaYear);
+	m_fCurValue -= m_Calculate->GetMoneyBeforeNYear(fMoney, -m_fROD,	m_deltaYear);
 }
 void MCMoney::subMoney(MONEY mMoney)
 {
@@ -102,9 +114,9 @@ void MCMoney::subMoney(MONEY mMoney)
 		// switch money type
 	}
 	m_fCurValue -= mMoney.fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
-friend void MCMoney::subMoney(MCMoney& mcMoney)
+void MCMoney::subMoney(MCMoney& mcMoney)
 {
 	if (mcMoney.m_mtType != m_mtType)
 	{
@@ -112,7 +124,7 @@ friend void MCMoney::subMoney(MCMoney& mcMoney)
 		// switch money type
 	}
 	m_fCurValue -= mcMoney.m_fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 
 MCMoney MCMoney::operator+(MCMoney& mcMoney)
@@ -123,14 +135,14 @@ MCMoney MCMoney::operator+(MCMoney& mcMoney)
 		// switch money type
 	}
 	float fCurValue = m_fCurValue + mcMoney.m_fCurValue;
-	float fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
-	return MCMoney(fValue, 
-		fCurValue, 
-		m_iYearIndex, 
-		m_iCurYearIndex, 
-		m_fROD, 
-		m_mtType);
+    return MCMoney(fValue,
+                   fCurValue,
+                   m_iYearIndex,
+                   m_iCurYearIndex,
+                   m_fROD,
+                   m_mtType);
 }
 MCMoney MCMoney::operator+(MONEY mMoney)
 {
@@ -140,7 +152,7 @@ MCMoney MCMoney::operator+(MONEY mMoney)
 		// switch money type
 	}
 	float fCurValue = m_fCurValue + mMoney.fCurValue;
-	float fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
 	return MCMoney(fValue, 
 		fCurValue, 
@@ -158,7 +170,8 @@ MCMoney MCMoney::operator-(MCMoney& mcMoney)
 		// switch money type
 	}
 	float fCurValue = m_fCurValue - mcMoney.m_fCurValue;
-	float fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+    
 
 	return MCMoney(fValue, 
 		fCurValue, 
@@ -175,9 +188,9 @@ MCMoney MCMoney::operator-(MONEY mMoney)
 		// switch money type
 	}
 	float fCurValue = m_fCurValue - mMoney.fCurValue;
-	float fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
-	return MCMoney(fValue, 
+	return MCMoney(fValue,
 		fCurValue, 
 		m_iYearIndex, 
 		m_iCurYearIndex, 
@@ -193,7 +206,7 @@ void MCMoney::operator+=(MONEY mMoney)
 		// switch money type
 	}
 	m_fCurValue += mMoney.fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 void MCMoney::operator-=(MONEY mMoney)
 {
@@ -203,10 +216,10 @@ void MCMoney::operator-=(MONEY mMoney)
 		// switch money type
 	}
 	m_fCurValue -= mMoney.fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 
-friend void MCMoney::operator+=(MCMoney& mcMoney);
+void MCMoney::operator+=(MCMoney& mcMoney)
 {
 	if (mcMoney.m_mtType != m_mtType)
 	{
@@ -214,9 +227,9 @@ friend void MCMoney::operator+=(MCMoney& mcMoney);
 		// switch money type
 	}
 	m_fCurValue += mcMoney.m_fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
-friend void MCMoney::operator-=(MCMoney& mcMoney);
+void MCMoney::operator-=(MCMoney& mcMoney)
 {
 	if (mcMoney.m_mtType != m_mtType)
 	{
@@ -224,11 +237,7 @@ friend void MCMoney::operator-=(MCMoney& mcMoney);
 		// switch money type
 	}
 	m_fCurValue -= mcMoney.m_fCurValue;
-	m_fValue = GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
+	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 
 
-MCMoney::MCMoney()
-{}
-MCMoney::~MCMoney()
-{}
