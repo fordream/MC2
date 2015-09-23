@@ -50,8 +50,20 @@ double Calculate::GetCapitalAfterNMonth(double fCapital, float fYearRate, int n)
 
 double Calculate::GetMoneyAfterNYear(double fCapital, float fYearRate, int n)
 {
-    fYearRate += 1.0; //month Rate
+    fYearRate += 1.0; //year Rate
     return GetAnProduct(fCapital, fYearRate, n);
+}
+
+double Calculate::GetCapitalBeforeNMonth(double fCapital, float fYearRate, int n)
+{
+    float fMonthRate = fYearRate / 12 + 1.0; //month Rate
+    return GetAByAnProduct(fCapital, fMonthRate, n);
+}
+
+double Calculate::GetMoneyBeforeNYear(double fCapital, float fYearRate, int n)
+{
+    fYearRate += 1.0; //year Rate
+    return GetAByAnProduct(fCapital, fYearRate, n);
 }
 
 Calculate::Calculate()

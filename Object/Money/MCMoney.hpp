@@ -3,14 +3,14 @@
 //  MC2
 //
 //  Created by Yun on 15/9/20.
-//  Copyright © 2015  Yun. All rights reserved.
+//  Copyright (c) 2015  Yun. All rights reserved.
 //
 
 #ifndef MCMoney_hpp
 #define MCMoney_hpp
 
 #include <stdio.h>
-#include "MCDef.h"
+#include "../../MCDef.h"
 #include <iostream>
 
 using namespace std;
@@ -28,9 +28,10 @@ enum MONEY_TYPE
 
 struct MONEY
 {
-    double      dValue;         // value of money
-    double      dCurValue;      // Current value of money
+    float       fValue;         // value of money
+    float       fCurValue;      // Current value of money
     int         iYearIndex;     // money in year
+    int         iCurYearIndex;  // current year
     float       fROD;           // rate of depreciation
     MONEY_TYPE  mtType;         // money type
 };
@@ -49,24 +50,24 @@ public:
     /*
      *  addMoney
      *
-     *  param:  dMoney   -   money
+     *  param:  fMoney   -   money
      *  param:  mMoney   -   MONEY
      *  param:  mcMoney   -   MCMoney
      *  return: void   -   void
      */
-    void    addMoney(double dMoney);
+    void    addMoney(float fMoney);
     void    addMoney(MONEY mMoney);
     friend void addMoney(MCMoney& mcMoney);
     
     /*
      *  subMoney
      *
-     *  param:  dMoney   -   money
+     *  param:  fMoney   -   money
      *  param:  mMoney   -   MONEY
      *  param:  mcMoney   -   MCMoney
      *  return: void   -   void
      */
-    void    subMoney(double dMoney);
+    void    subMoney(float fMoney);
     void    subMoney(MONEY mMoney);
     friend void subMoney(MCMoney& mcMoney);
     
@@ -80,25 +81,29 @@ public:
     MCMoney operator+(MONEY mMoney);
     MCMoney operator-(MCMoney& mcMoney);
     MCMoney operator-(MONEY mMoney);
-    void    operator+=(MCMoney& mcMoney);
     void    operator+=(MONEY mMoney);
-    void    operator-=(MCMoney& mcMoney);
     void    operator-=(MONEY mMoney);
-    
+    friend void operator+=(MCMoney& mcMoney);
+    friend void operator-=(MCMoney& mcMoney);
+
 private:
-    double      m_dValue;         // value of money
-    double      m_dCurValue;      // Current value of money
+    float       m_fValue;         // value of money
+    float       m_fCurValue;      // Current value of money
     int         m_iYearIndex;     // money in year
+    int         m_iCurYearIndex;  // current year
     float       m_fROD;           // rate of depreciation
     MONEY_TYPE  m_mtType;         // money type
+
+    int         m_deltaYear;      // delta years
     
 public:
     MCMoney();
     MCMoney(MCMoney& mcMoney);
     MCMoney(MONEY mMoney);
-    MCMoney(double dValue,
-            double dCurValue,
+    MCMoney(float fValue,
+            float fCurValue,
             int iYearIndex,
+            int iCurYearIndex,
             float fROD,
             MONEY_TYPE mtType);
     ~MCMoney();

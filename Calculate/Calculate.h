@@ -58,6 +58,25 @@ public:
      *  param: n - num of year
      */
     double GetMoneyAfterNYear(double fCapital, float fYearRate, int n);
+
+
+    /*
+     *  GetCapitalBeforeNMonth
+     *
+     *  param: fCapital - capital of now
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
+     */
+    double GetCapitalBeforeNMonth(double fCapital, float fYearRate, int n);
+
+    /*
+     *  GetMoneyBeforeNYear
+     *
+     *  param: fCapital - capital of now
+     *  param: fYearRate - rate of year
+     *  param: n - num of year
+     */
+    double GetMoneyBeforeNYear(double fCapital, float fYearRate, int n);
     
     Calculate();
     ~Calculate();

@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <iostream>
 
-#include "Calculate.h"
+#include "../../Calculate/Calculate.h"
 #include "MCGoldEgg.h"
 
 using namespace std;

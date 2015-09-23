@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o
-LINKOBJ  = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o
+OBJ      = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o Object/Borrow/MCBorrowSystem.o Object/Borrow/CreditCard/MCCreditCardSystem.o Object/Earnning/MCEarnSystem.o Object/Earnning/BeGiven/MCBeGivenSystem.o Object/Earnning/Cause/MCCauseSystem.o Object/Earnning/Work/MCWorkSystem.o Object/Goose/MCGoldEgg.o Object/Goose/MCGoose.o Object/Money/MCMoney.o Object/Pay/Car/MCCarSystem.o Object/Pay/Giving/MCGivingSystem.o Object/Pay/Giving/Children/MCChildrenSystem.o Object/Pay/Giving/Parent/MCParentSystem.o Object/Pay/Giving/SendCash/MCSendCashSystem.o Object/Pay/Growth/MCGrowthSystem.o Object/Pay/Happy/MCHappySystem.o Object/Pay/House/MCHouseDecorate.o Object/Pay/House/MCHousePurchase.o Object/Pay/House/MCHouseSystem.o Object/Pay/Insurance/MCInsuranceSystem.o Object/Pay/Marry/MCMarrySystem.o Object/Pay/MCPaySystem.o Object/Time/MCTime.o Object/Time/MCTimeSystem.o
+LINKOBJ  = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o Object/Borrow/MCBorrowSystem.o Object/Borrow/CreditCard/MCCreditCardSystem.o Object/Earnning/MCEarnSystem.o Object/Earnning/BeGiven/MCBeGivenSystem.o Object/Earnning/Cause/MCCauseSystem.o Object/Earnning/Work/MCWorkSystem.o Object/Goose/MCGoldEgg.o Object/Goose/MCGoose.o Object/Money/MCMoney.o Object/Pay/Car/MCCarSystem.o Object/Pay/Giving/MCGivingSystem.o Object/Pay/Giving/Children/MCChildrenSystem.o Object/Pay/Giving/Parent/MCParentSystem.o Object/Pay/Giving/SendCash/MCSendCashSystem.o Object/Pay/Growth/MCGrowthSystem.o Object/Pay/Happy/MCHappySystem.o Object/Pay/House/MCHouseDecorate.o Object/Pay/House/MCHousePurchase.o Object/Pay/House/MCHouseSystem.o Object/Pay/Insurance/MCInsuranceSystem.o Object/Pay/Marry/MCMarrySystem.o Object/Pay/MCPaySystem.o Object/Time/MCTime.o Object/Time/MCTimeSystem.o
 LIBS     = -L"D:/AppData/Dev-Cpp/MinGW64/lib" -L"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -35,3 +35,75 @@ Calculate/Calculate.o: Calculate/Calculate.cpp
 
 Calculate/MCMath.o: Calculate/MCMath.cpp
 	$(CPP) -c Calculate/MCMath.cpp -o Calculate/MCMath.o $(CXXFLAGS)
+
+Object/Borrow/MCBorrowSystem.o: Object/Borrow/MCBorrowSystem.cpp
+	$(CPP) -c Object/Borrow/MCBorrowSystem.cpp -o Object/Borrow/MCBorrowSystem.o $(CXXFLAGS)
+
+Object/Borrow/CreditCard/MCCreditCardSystem.o: Object/Borrow/CreditCard/MCCreditCardSystem.cpp
+	$(CPP) -c Object/Borrow/CreditCard/MCCreditCardSystem.cpp -o Object/Borrow/CreditCard/MCCreditCardSystem.o $(CXXFLAGS)
+
+Object/Earnning/MCEarnSystem.o: Object/Earnning/MCEarnSystem.cpp
+	$(CPP) -c Object/Earnning/MCEarnSystem.cpp -o Object/Earnning/MCEarnSystem.o $(CXXFLAGS)
+
+Object/Earnning/BeGiven/MCBeGivenSystem.o: Object/Earnning/BeGiven/MCBeGivenSystem.cpp
+	$(CPP) -c Object/Earnning/BeGiven/MCBeGivenSystem.cpp -o Object/Earnning/BeGiven/MCBeGivenSystem.o $(CXXFLAGS)
+
+Object/Earnning/Cause/MCCauseSystem.o: Object/Earnning/Cause/MCCauseSystem.cpp
+	$(CPP) -c Object/Earnning/Cause/MCCauseSystem.cpp -o Object/Earnning/Cause/MCCauseSystem.o $(CXXFLAGS)
+
+Object/Earnning/Work/MCWorkSystem.o: Object/Earnning/Work/MCWorkSystem.cpp
+	$(CPP) -c Object/Earnning/Work/MCWorkSystem.cpp -o Object/Earnning/Work/MCWorkSystem.o $(CXXFLAGS)
+
+Object/Goose/MCGoldEgg.o: Object/Goose/MCGoldEgg.cpp
+	$(CPP) -c Object/Goose/MCGoldEgg.cpp -o Object/Goose/MCGoldEgg.o $(CXXFLAGS)
+
+Object/Goose/MCGoose.o: Object/Goose/MCGoose.cpp
+	$(CPP) -c Object/Goose/MCGoose.cpp -o Object/Goose/MCGoose.o $(CXXFLAGS)
+
+Object/Money/MCMoney.o: Object/Money/MCMoney.cpp
+	$(CPP) -c Object/Money/MCMoney.cpp -o Object/Money/MCMoney.o $(CXXFLAGS)
+
+Object/Pay/Car/MCCarSystem.o: Object/Pay/Car/MCCarSystem.cpp
+	$(CPP) -c Object/Pay/Car/MCCarSystem.cpp -o Object/Pay/Car/MCCarSystem.o $(CXXFLAGS)
+
+Object/Pay/Giving/MCGivingSystem.o: Object/Pay/Giving/MCGivingSystem.cpp
+	$(CPP) -c Object/Pay/Giving/MCGivingSystem.cpp -o Object/Pay/Giving/MCGivingSystem.o $(CXXFLAGS)
+
+Object/Pay/Giving/Children/MCChildrenSystem.o: Object/Pay/Giving/Children/MCChildrenSystem.cpp
+	$(CPP) -c Object/Pay/Giving/Children/MCChildrenSystem.cpp -o Object/Pay/Giving/Children/MCChildrenSystem.o $(CXXFLAGS)
+
+Object/Pay/Giving/Parent/MCParentSystem.o: Object/Pay/Giving/Parent/MCParentSystem.cpp
+	$(CPP) -c Object/Pay/Giving/Parent/MCParentSystem.cpp -o Object/Pay/Giving/Parent/MCParentSystem.o $(CXXFLAGS)
+
+Object/Pay/Giving/SendCash/MCSendCashSystem.o: Object/Pay/Giving/SendCash/MCSendCashSystem.cpp
+	$(CPP) -c Object/Pay/Giving/SendCash/MCSendCashSystem.cpp -o Object/Pay/Giving/SendCash/MCSendCashSystem.o $(CXXFLAGS)
+
+Object/Pay/Growth/MCGrowthSystem.o: Object/Pay/Growth/MCGrowthSystem.cpp
+	$(CPP) -c Object/Pay/Growth/MCGrowthSystem.cpp -o Object/Pay/Growth/MCGrowthSystem.o $(CXXFLAGS)
+
+Object/Pay/Happy/MCHappySystem.o: Object/Pay/Happy/MCHappySystem.cpp
+	$(CPP) -c Object/Pay/Happy/MCHappySystem.cpp -o Object/Pay/Happy/MCHappySystem.o $(CXXFLAGS)
+
+Object/Pay/House/MCHouseDecorate.o: Object/Pay/House/MCHouseDecorate.cpp
+	$(CPP) -c Object/Pay/House/MCHouseDecorate.cpp -o Object/Pay/House/MCHouseDecorate.o $(CXXFLAGS)
+
+Object/Pay/House/MCHousePurchase.o: Object/Pay/House/MCHousePurchase.cpp
+	$(CPP) -c Object/Pay/House/MCHousePurchase.cpp -o Object/Pay/House/MCHousePurchase.o $(CXXFLAGS)
+
+Object/Pay/House/MCHouseSystem.o: Object/Pay/House/MCHouseSystem.cpp
+	$(CPP) -c Object/Pay/House/MCHouseSystem.cpp -o Object/Pay/House/MCHouseSystem.o $(CXXFLAGS)
+
+Object/Pay/Insurance/MCInsuranceSystem.o: Object/Pay/Insurance/MCInsuranceSystem.cpp
+	$(CPP) -c Object/Pay/Insurance/MCInsuranceSystem.cpp -o Object/Pay/Insurance/MCInsuranceSystem.o $(CXXFLAGS)
+
+Object/Pay/Marry/MCMarrySystem.o: Object/Pay/Marry/MCMarrySystem.cpp
+	$(CPP) -c Object/Pay/Marry/MCMarrySystem.cpp -o Object/Pay/Marry/MCMarrySystem.o $(CXXFLAGS)
+
+Object/Pay/MCPaySystem.o: Object/Pay/MCPaySystem.cpp
+	$(CPP) -c Object/Pay/MCPaySystem.cpp -o Object/Pay/MCPaySystem.o $(CXXFLAGS)
+
+Object/Time/MCTime.o: Object/Time/MCTime.cpp
+	$(CPP) -c Object/Time/MCTime.cpp -o Object/Time/MCTime.o $(CXXFLAGS)
+
+Object/Time/MCTimeSystem.o: Object/Time/MCTimeSystem.cpp
+	$(CPP) -c Object/Time/MCTimeSystem.cpp -o Object/Time/MCTimeSystem.o $(CXXFLAGS)

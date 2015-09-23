@@ -14,6 +14,11 @@ double GetAnProduct(float a, float q, int n)
     return a * pow(q, n-1);
 }
 
+double GetAByAnProduct(float an, float q, int n)
+{
+    return an / pow(q, n - 1);
+}
+
 double GetSumOfAnProduct(float a, float q, int n)
 {
     if (q == 1)
