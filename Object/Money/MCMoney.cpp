@@ -137,12 +137,14 @@ MCMoney MCMoney::operator+(MCMoney& mcMoney)
 	float fCurValue = m_fCurValue + mcMoney.m_fCurValue;
 	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
-    return MCMoney(fValue,
+	MCMoney money(fValue,
                    fCurValue,
                    m_iYearIndex,
                    m_iCurYearIndex,
                    m_fROD,
                    m_mtType);
+
+    return money;
 }
 MCMoney MCMoney::operator+(MONEY mMoney)
 {
@@ -154,12 +156,14 @@ MCMoney MCMoney::operator+(MONEY mMoney)
 	float fCurValue = m_fCurValue + mMoney.fCurValue;
 	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
-	return MCMoney(fValue, 
-		fCurValue, 
-		m_iYearIndex, 
-		m_iCurYearIndex, 
-		m_fROD, 
-		m_mtType);
+	MCMoney money(fValue,
+                   fCurValue,
+                   m_iYearIndex,
+                   m_iCurYearIndex,
+                   m_fROD,
+                   m_mtType);
+
+    return money;
 }
 
 MCMoney MCMoney::operator-(MCMoney& mcMoney)
@@ -172,13 +176,14 @@ MCMoney MCMoney::operator-(MCMoney& mcMoney)
 	float fCurValue = m_fCurValue - mcMoney.m_fCurValue;
 	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
     
+	MCMoney money(fValue,
+                   fCurValue,
+                   m_iYearIndex,
+                   m_iCurYearIndex,
+                   m_fROD,
+                   m_mtType);
 
-	return MCMoney(fValue, 
-		fCurValue, 
-		m_iYearIndex, 
-		m_iCurYearIndex, 
-		m_fROD, 
-		m_mtType);
+    return money;
 }
 MCMoney MCMoney::operator-(MONEY mMoney)
 {
@@ -190,12 +195,14 @@ MCMoney MCMoney::operator-(MONEY mMoney)
 	float fCurValue = m_fCurValue - mMoney.fCurValue;
 	float fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 
-	return MCMoney(fValue,
-		fCurValue, 
-		m_iYearIndex, 
-		m_iCurYearIndex, 
-		m_fROD, 
-		m_mtType);
+	MCMoney money(fValue,
+                   fCurValue,
+                   m_iYearIndex,
+                   m_iCurYearIndex,
+                   m_fROD,
+                   m_mtType);
+
+    return money;
 }
 
 void MCMoney::operator+=(MONEY mMoney)
