@@ -127,7 +127,7 @@ void MCMoney::subMoney(const MCMoney& mcMoney)
 	m_fValue = m_Calculate->GetMoneyAfterNYear(m_fCurValue, -m_fROD, m_deltaYear);
 }
 
-MCMoney MCMoney::operator+(MCMoney& mcMoney)
+MCMoney MCMoney::operator+(const MCMoney& mcMoney)
 {
 	if (mcMoney.m_mtType != m_mtType)
 	{

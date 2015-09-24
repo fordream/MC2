@@ -78,14 +78,36 @@ public:
      *  param:  mcMoney   -   MCMoney
      *  return: money   -   MCMoney
      */
-    MCMoney operator+(MCMoney& mcMoney);
-    MCMoney operator+(const MONEY mMoney);
-    MCMoney operator-(const MCMoney& mcMoney);
-    MCMoney operator-(const MONEY mMoney);
-    void    operator+=(const MONEY mMoney);
-    void    operator-=(const MONEY mMoney);
-    void operator+=(const MCMoney& mcMoney);
-    void operator-=(const MCMoney& mcMoney);
+    MCMoney operator+   (const MCMoney& mcMoney);
+    MCMoney operator-   (const MCMoney& mcMoney);
+    MCMoney operator+   (const MONEY mMoney);
+    MCMoney operator-   (const MONEY mMoney);
+    void    operator+=  (const MONEY mMoney);
+    void    operator-=  (const MONEY mMoney);
+    void    operator+=  (const MCMoney& mcMoney);
+    void    operator-=  (const MCMoney& mcMoney);
+    
+public:
+    void        setValueNoLink(float fValue);
+    void        setCurValueNoLink(float fCurValue);
+    void        setYearIndexNoLink(int iYearIndex);
+    void        setCurYearIndexNoLink(int iCurYearIndex);
+    void        setRODNoLink(float fROD);
+    void        setTypeNoLink(MONEY_TYPE mtType);
+    
+    void        setValueWithLink(float fValue);
+    void        setCurValueWithLink(float fCurValue);
+    void        setYearIndexWithLink(int iYearIndex);
+    void        setCurYearIndexWithLink(int iCurYearIndex);
+    void        setRODWithLink(float fROD);
+    void        setTypeWithLink(MONEY_TYPE mtType);
+    
+    void        getValue()          const;
+    void        getCurValue()       const;
+    void        getYearIndex()      const;
+    void        getCurYearIndex()   const;
+    void        getROD()            const;
+    void        getType()           const;
 
 private:
     float       m_fValue;         // value of money
