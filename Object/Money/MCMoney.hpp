@@ -57,8 +57,8 @@ public:
      *  return: void   -   void
      */
     void    addMoney(float fMoney);
-    void    addMoney(MONEY mMoney);
-    void    addMoney(MCMoney& mcMoney);
+    void    addMoney(const MONEY mMoney);
+    void    addMoney(const MCMoney& mcMoney);
     
     /*
      *  subMoney
@@ -69,8 +69,8 @@ public:
      *  return: void   -   void
      */
     void    subMoney(float fMoney);
-    void    subMoney(MONEY mMoney);
-    void    subMoney(MCMoney& mcMoney);
+    void    subMoney(const MONEY mMoney);
+    void    subMoney(const MCMoney& mcMoney);
     
     /*
      *  +, -, +=, -=
@@ -79,13 +79,13 @@ public:
      *  return: money   -   MCMoney
      */
     MCMoney operator+(MCMoney& mcMoney);
-    MCMoney operator+(MONEY mMoney);
-    MCMoney operator-(MCMoney& mcMoney);
-    MCMoney operator-(MONEY mMoney);
-    void    operator+=(MONEY mMoney);
-    void    operator-=(MONEY mMoney);
-    void operator+=(MCMoney& mcMoney);
-    void operator-=(MCMoney& mcMoney);
+    MCMoney operator+(const MONEY mMoney);
+    MCMoney operator-(const MCMoney& mcMoney);
+    MCMoney operator-(const MONEY mMoney);
+    void    operator+=(const MONEY mMoney);
+    void    operator-=(const MONEY mMoney);
+    void operator+=(const MCMoney& mcMoney);
+    void operator-=(const MCMoney& mcMoney);
 
 private:
     float       m_fValue;         // value of money
@@ -100,14 +100,14 @@ private:
     
 public:
     MCMoney();
-    MCMoney(MCMoney& mcMoney);
-    MCMoney(MONEY mMoney);
-    MCMoney(float fValue,
-            float fCurValue,
-            int iYearIndex,
-            int iCurYearIndex,
-            float fROD,
-            MONEY_TYPE mtType);
+    MCMoney(const MCMoney& mcMoney);
+    MCMoney(const MONEY mMoney);
+    MCMoney(float fValue = 0,
+            float fCurValue = 0,
+            int iYearIndex = 2015,
+            int iCurYearIndex = 2015,
+            float fROD = 0.04,
+            MONEY_TYPE mtType = RenMinBi);
     ~MCMoney();
 };
 

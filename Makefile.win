@@ -1,17 +1,17 @@
 # Project: MC2
 # Makefile created by Dev-C++ 5.11
 
-CPP      = g++.exe
-CC       = gcc.exe
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
 OBJ      = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o Object/Borrow/MCBorrowSystem.o Object/Borrow/CreditCard/MCCreditCardSystem.o Object/Earnning/MCEarnSystem.o Object/Earnning/BeGiven/MCBeGivenSystem.o Object/Earnning/Cause/MCCauseSystem.o Object/Earnning/Work/MCWorkSystem.o Object/Goose/MCGoldEgg.o Object/Goose/MCGoose.o Object/Money/MCMoney.o Object/Pay/Car/MCCarSystem.o Object/Pay/Giving/MCGivingSystem.o Object/Pay/Giving/Children/MCChildrenSystem.o Object/Pay/Giving/Parent/MCParentSystem.o Object/Pay/Giving/SendCash/MCSendCashSystem.o Object/Pay/Growth/MCGrowthSystem.o Object/Pay/Happy/MCHappySystem.o Object/Pay/House/MCHouseDecorate.o Object/Pay/House/MCHousePurchase.o Object/Pay/House/MCHouseSystem.o Object/Pay/Insurance/MCInsuranceSystem.o Object/Pay/Marry/MCMarrySystem.o Object/Pay/MCPaySystem.o Object/Time/MCTime.o Object/Time/MCTimeSystem.o
 LINKOBJ  = main.o Object/MCMan.o Calculate/Calculate.o Calculate/MCMath.o Object/Borrow/MCBorrowSystem.o Object/Borrow/CreditCard/MCCreditCardSystem.o Object/Earnning/MCEarnSystem.o Object/Earnning/BeGiven/MCBeGivenSystem.o Object/Earnning/Cause/MCCauseSystem.o Object/Earnning/Work/MCWorkSystem.o Object/Goose/MCGoldEgg.o Object/Goose/MCGoose.o Object/Money/MCMoney.o Object/Pay/Car/MCCarSystem.o Object/Pay/Giving/MCGivingSystem.o Object/Pay/Giving/Children/MCChildrenSystem.o Object/Pay/Giving/Parent/MCParentSystem.o Object/Pay/Giving/SendCash/MCSendCashSystem.o Object/Pay/Growth/MCGrowthSystem.o Object/Pay/Happy/MCHappySystem.o Object/Pay/House/MCHouseDecorate.o Object/Pay/House/MCHousePurchase.o Object/Pay/House/MCHouseSystem.o Object/Pay/Insurance/MCInsuranceSystem.o Object/Pay/Marry/MCMarrySystem.o Object/Pay/MCPaySystem.o Object/Time/MCTime.o Object/Time/MCTimeSystem.o
-LIBS     = -L"D:/AppData/Dev-Cpp/MinGW64/lib" -L"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+LIBS     = -L"D:/AppData/Dev-Cpp/MinGW64/lib" -L"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/AppData/Dev-Cpp/MinGW64/include" -I"D:/AppData/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/AppData/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = MC2.exe
-CXXFLAGS = $(CXXINCS) 
-CFLAGS   = $(INCS) 
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
