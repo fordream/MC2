@@ -1,0 +1,15 @@
+pwd
+function compile()
+{
+for file in `ls`;do
+	if [ -d ${file} ];then
+		cd $i
+		compile
+		cd ..
+	#elif [ ${file##*.} == "cpp" ];then
+	else
+		echo `pwd`${file}	
+	fi
+done
+}
+compile

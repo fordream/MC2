@@ -37,7 +37,5 @@ int main(int argc, char const *argv[])
 	MCMoney money3 = money1 + money2;
 	money3.describe();
 
-	system("pause");
-	
 	return 0;
 }
