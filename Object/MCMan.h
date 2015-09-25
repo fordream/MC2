@@ -30,8 +30,8 @@ private:
     
     float   fCurWage;           // current wage
     
-    int     iLitleCircle = 5;   // little calculate circle
-    int     iBigCircle = 10;    // big calculate circle
+    int     iLitleCircle;   // little calculate circle  5
+    int     iBigCircle;    // big calculate circle   10
 };
 
 #endif /* defined(__MC2__MCMan__) */
